@@ -14,6 +14,10 @@
 		3E2F402C29CAF2B500606E17 /* StockNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F402B29CAF2B500606E17 /* StockNewsTests.swift */; };
 		3E2F403629CAF2B500606E17 /* StockNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F403529CAF2B500606E17 /* StockNewsUITests.swift */; };
 		3E2F403829CAF2B500606E17 /* StockNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F403729CAF2B500606E17 /* StockNewsUITestsLaunchTests.swift */; };
+		3E2F404629CAF2F600606E17 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F404529CAF2F600606E17 /* ApiManager.swift */; };
+		3E2F404929CAF4CA00606E17 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F404829CAF4CA00606E17 /* ApiResult.swift */; };
+		3E2F404B29CAF52100606E17 /* ApiResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F404A29CAF52100606E17 /* ApiResults.swift */; };
+		3E2F404E29CAFA2400606E17 /* StockInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F404D29CAFA2400606E17 /* StockInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		3E2F403129CAF2B500606E17 /* StockNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2F403529CAF2B500606E17 /* StockNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockNewsUITests.swift; sourceTree = "<group>"; };
 		3E2F403729CAF2B500606E17 /* StockNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E2F404529CAF2F600606E17 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		3E2F404829CAF4CA00606E17 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		3E2F404A29CAF52100606E17 /* ApiResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResults.swift; sourceTree = "<group>"; };
+		3E2F404D29CAFA2400606E17 /* StockInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,9 @@
 		3E2F401929CAF2B300606E17 /* StockNews */ = {
 			isa = PBXGroup;
 			children = (
+				3E2F404C29CAFA1400606E17 /* Views */,
+				3E2F404729CAF47700606E17 /* Model */,
+				3E2F404429CAF2E800606E17 /* Managers */,
 				3E2F401A29CAF2B300606E17 /* StockNewsApp.swift */,
 				3E2F401C29CAF2B300606E17 /* ContentView.swift */,
 				3E2F401E29CAF2B500606E17 /* Assets.xcassets */,
@@ -125,6 +136,31 @@
 				3E2F403729CAF2B500606E17 /* StockNewsUITestsLaunchTests.swift */,
 			);
 			path = StockNewsUITests;
+			sourceTree = "<group>";
+		};
+		3E2F404429CAF2E800606E17 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3E2F404529CAF2F600606E17 /* ApiManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3E2F404729CAF47700606E17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E2F404829CAF4CA00606E17 /* ApiResult.swift */,
+				3E2F404A29CAF52100606E17 /* ApiResults.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E2F404C29CAFA1400606E17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E2F404D29CAFA2400606E17 /* StockInfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E2F401D29CAF2B300606E17 /* ContentView.swift in Sources */,
+				3E2F404E29CAFA2400606E17 /* StockInfoView.swift in Sources */,
+				3E2F404629CAF2F600606E17 /* ApiManager.swift in Sources */,
 				3E2F401B29CAF2B300606E17 /* StockNewsApp.swift in Sources */,
+				3E2F404929CAF4CA00606E17 /* ApiResult.swift in Sources */,
+				3E2F404B29CAF52100606E17 /* ApiResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

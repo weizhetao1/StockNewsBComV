@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var apiManager = ApiManager.shared
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            if let results = apiManager.results {
+                List {
+                    ForEach(results, id:\.ticker) { item in
+                        
+                        NavigationLink(destination: StockInfoView(), label: {
+                            HStack {
+                                Text("\(item.name)")
+                                Spacer()
+                                Text("\(item.ticker)")
+                            }
+                        })
+                    }
+                }
+                .navigationTitle(Text("Stock Data"))
+            }
+            else {
+                Text("Loading stock data...")
+            }
         }
-        .padding()
+        .onAppear {
+            Task {
+                await apiManager.getTickers()
+            }
+        }
     }
 }
 
