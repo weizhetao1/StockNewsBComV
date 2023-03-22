@@ -14,7 +14,7 @@ class ApiManager: ObservableObject {
     @Published var results: [ApiResult]? = nil
     
     private init() {
-        apiKey = "<YOUR-API-KEY>"
+        apiKey = "WJtxa0J4SDmMK1744_qaopdvbX5rT0EU"
     }
     
     func getTickers() async {

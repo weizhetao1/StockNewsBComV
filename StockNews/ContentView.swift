@@ -16,8 +16,7 @@ struct ContentView: View {
             if let results = apiManager.results {
                 List {
                     ForEach(results, id:\.ticker) { item in
-                        
-                        NavigationLink(destination: StockInfoView(), label: {
+                        NavigationLink(destination: StockInfoView(name: item.name), label: {
                             HStack {
                                 Text("\(item.name)")
                                 Spacer()
